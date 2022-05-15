@@ -51,7 +51,7 @@ const Slider = (props) => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-
+// console.log()
     return (
         <>
             <div className='res-container'>
@@ -61,8 +61,11 @@ const Slider = (props) => {
                 </div>
                 <div className='res-bar'>
                     <div className='menu-btn' onClick={handleShow}>
-                        <MenuIcon sx={{ color: "white", fontSize:"34px" }} />
+                        <MenuIcon sx={{ color: "white", fontSize:"34px" }} /> 
                     </div>
+                        <div className='bar-title'>
+                            {SiderBarData[active].title}
+                        </div>
 
                     <Offcanvas show={show} onHide={handleClose}>
                         <Offcanvas.Header closeButton>

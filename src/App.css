@@ -34,6 +34,7 @@ body {
 .sliderList {
 
   padding: 0px;
+  margin-top: 30px;
   width: 212px;
   height: 312px;
 
@@ -93,6 +94,18 @@ body {
   justify-content: center;
   background-color: #FFFFFF;
 }
+.bar-title{
+  width: 40px;
+  height: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  
+   
+}
 
 .res-bar{
   display: flex;
@@ -130,6 +143,9 @@ background: #059669;
 
 }
 
+.Col2{
+  width: 100vw;
+}
 
 /* -------- Home Page -------- */
 
@@ -464,6 +480,10 @@ font-weight: 400;
 font-size: 14px;
 line-height: 8px;
 text-align: center;
+}
+
+.empty{
+  height: 70.5vh;
 }
 .back-btn{
   display: none;
