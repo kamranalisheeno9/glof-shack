@@ -16,7 +16,7 @@ body {
   align-items: center;
   padding: 24px;
   position: absolute;
-  width: 260px;
+  width: 310px;
   left: 0px;
   top: 0px;
   bottom: 0px;
@@ -139,7 +139,7 @@ background: #059669;
 }
 
 .Col1 {
-  width: 312px;
+  width: 400px;
 
 }
 
@@ -447,6 +447,7 @@ width: 100%;
 height: 160px;
 margin-top: 60px;
 background: #E5E7EB;
+
 }
 .Footer-text-1{
 height: 20px;
@@ -483,13 +484,52 @@ text-align: center;
 }
 
 .empty{
-  height: 70.5vh;
+  height: 76.5vh;
 }
 .back-btn{
   display: none;
+
+
 }
 
 
+
+/* ----------- Event --------- */
+.page-bg{
+height: 200px;
+background: url('./assets/eventh.png');
+background-size: cover;
+background-position: center;
+position: relative;
+
+}
+.tutorials-h{
+  
+  background: url('./assets/tutorialsh.png');
+}
+
+.page-title{
+position: absolute;
+width: 161px;
+height: 48px;
+left: 60px;
+top: calc(50% - 48px/2);
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+color: #FFFFFF;
+}
+.inner-page-title {
+  width: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #111827;
+  margin-top: 20px;
+  margin-left: 20px;
+}
 @media only screen and (max-width:1300px){
 
   /* -------- Home Page -------- */
@@ -687,5 +727,12 @@ object-fit: cover;
   width: auto;
   text-align: justify;
   padding-right: 18px ;
+}
+.page-title {
+  width: auto;
+  font-size: 38px;
+}
+.inner-page-title{
+  font-size: 22px;
 }
 }
