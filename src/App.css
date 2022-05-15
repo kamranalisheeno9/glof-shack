@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 
 body {
-  margin: 0px;
-  padding: 0px;
-  width: 100vw;
   background-color: #F3F4F6 !important;
 }
 .App{
@@ -107,9 +104,11 @@ width: 100%;
 height: 56px;
 background: #059669;
 }
-.css-i4bv87-MuiSvgIcon-root{
-  color: #FFFFFF;
+.menu-btn{
+  cursor: pointer;
 }
+
+
 
 .offcanvas.offcanvas-start {
   width: auto !important;
@@ -220,7 +219,7 @@ background: #059669;
 }
 
 .play-text {
-  width: 136px;
+  width: 150px;
   height: 24px;
   font-family: 'Inter';
   font-style: normal;

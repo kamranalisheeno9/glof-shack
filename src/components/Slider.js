@@ -60,9 +60,9 @@ const Slider = (props) => {
                     <img src={ResLogo} />
                 </div>
                 <div className='res-bar'>
-                    <Button variant="" onClick={handleShow}>
-                        <MenuIcon />
-                    </Button>
+                    <div className='menu-btn' onClick={handleShow}>
+                        <MenuIcon sx={{ color: "white", fontSize:"34px" }} />
+                    </div>
 
                     <Offcanvas show={show} onHide={handleClose}>
                         <Offcanvas.Header closeButton>

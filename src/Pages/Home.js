@@ -37,6 +37,7 @@ const responsive = {
 const Home = () => {
 
     return (
+<>
 
         <div className='Row'>
             <div className='Col1'></div>
@@ -144,6 +145,7 @@ const Home = () => {
             </div>
         </div>
 
+    </>
     );
 }
 
