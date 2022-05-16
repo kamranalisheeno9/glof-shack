@@ -16,7 +16,7 @@ body {
   align-items: center;
   padding: 24px;
   position: absolute;
-  width: 310px;
+  width: 300px;
   left: 0px;
   top: 0px;
   bottom: 0px;
@@ -144,7 +144,7 @@ background: #059669;
 }
 
 .Col2{
-  width: 100vw;
+  /* width: 100%; */
 }
 
 /* -------- Home Page -------- */
@@ -152,9 +152,9 @@ background: #059669;
 .mainScreen {
   position: absolute;
   height: 637px;
-  left: 344px;
-  right: 30px;
-  top: 24px;
+  left: 310px;
+  right: 0px;
+  top: 4px;
 }
 
 
@@ -364,6 +364,7 @@ background: #059669;
 .vid-time{
   display: flex;
   justify-content: center;
+  margin-bottom: 35px;
 }
 .vector-icon-2{
   width: 18px;
@@ -445,7 +446,7 @@ align-items: center;
 padding: 0px;
 width: 100%;
 height: 160px;
-margin-top: 60px;
+margin-top: 0px;
 background: #E5E7EB;
 
 }
@@ -528,7 +529,59 @@ color: #FFFFFF;
   line-height: 36px;
   color: #111827;
   margin-top: 20px;
-  margin-left: 20px;
+}
+.tutorial-box{
+  position: absolute;
+  height: 637px;
+  left: 310px;
+  right: 0px;
+  top: 4px;
+
+}
+
+/* ---------- Lets Play ------- */
+
+.lets-play-box{
+  height: 264px;
+  background: url('./assets//letsplay.png');
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
+  position: relative;
+}
+.lets-text-box{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 24px;
+position: absolute;
+height: 108px;
+left: calc(50% - 216px/2);
+top: calc(50% - 108px/2);
+}
+.lets-ply-text{
+height: 36px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+color: #FFFFFF;
+
+}
+.lets-play-btn{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 24px;
+gap: 8px;
+width: 216px;
+height: 48px;
+background: #FFFFFF;
+border-radius: 44px;
+
 }
 @media only screen and (max-width:1300px){
 
@@ -543,14 +596,6 @@ color: #FFFFFF;
 @media only screen and (max-width:1100px){
 
   /* -------- Home Page -------- */
-
-  .mainScreen {
-    position: absolute;
-    height: 637px;
-    left: 344px;
-    right: 30px;
-    top: 24px;
-  }
   
   .mainScreen img {
     width: 100%;
@@ -598,6 +643,16 @@ color: #FFFFFF;
     width: 100%;
     
 }
+.tutorial-box{
+   
+  left: 0px;
+  right: 0px;
+  top: 0px;
+
+}
+.inner-page-title{
+  line-height: 16px;
+}
 .Col2{
   width: 100%;
   position: absolute;
@@ -640,7 +695,10 @@ text-align: center;
 color: #FFFFFF;
 cursor: pointer;
 }
+.inner-page-title{
+  margin-left: 20px;
 
+}
 
 }
 @media only screen and (max-width:900px){
@@ -734,5 +792,6 @@ object-fit: cover;
 }
 .inner-page-title{
   font-size: 22px;
+
 }
 }
