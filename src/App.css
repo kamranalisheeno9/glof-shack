@@ -681,7 +681,53 @@ border: 1px solid #D1D5DB;
 outline: none;
 
 }
+.submit-btn{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 24px;
+margin-top: 15px;
+gap: 8px;
+width: 174px;
+height: 48px;
+background: #9CA3AF;
+border-radius: 44px;
+cursor: pointer;
+margin-bottom: 15px;
+}
+.send-text{
+  
+height: 24px;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #E5E7EB;
+}
 
+/* -------- Rates -------- */
+.rates-bg{
+  background-image: url('./assets//ratesbg.png');
+  background-size: cover;
+}
+.green-text{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 8px;
+width: 152px;
+height: 32px;
+background: #059669;
+margin-top: 15px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+align-items: center;
+justify-content: center;
+}
 @media only screen and (max-width:1300px) {
 
   /* -------- Home Page -------- */
@@ -942,12 +988,21 @@ outline: none;
 
   }
   .email input {
-    width: 338px;
+    width: auto;
 }
 .message textarea{
-  width: 338px;
+  width: 100%;
 }
 .input-box {
   margin-top: 44px;
+}
+.email {
+  width: 100%;
+}
+.email input{
+  width: 100%;
+}
+.e-l-email-box{
+  padding: 0px 10px;
 }
 }

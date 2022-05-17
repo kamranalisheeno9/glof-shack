@@ -1,5 +1,6 @@
 import React from 'react';
-import Slider from '../components/Slider'
+import SendIcon from '../assets/send.png'
+import Footer from '../components/Footer';
 import '../App.css'
 const Events = () => {
     return (
@@ -8,7 +9,7 @@ const Events = () => {
             <div className='Col2'>
                 <div className='tutorial-box'>
 
-                    <div className='page-bg'>
+                    <div className='page-bg tutorials-h'>
                         <div className='page-title'>
                             Events
                         </div>
@@ -43,7 +44,7 @@ const Events = () => {
 
                                     </div>
                                 </div>
-                                <div className='l-box'>
+                                <div className='email'>
                                     <div className='form-title'>Email</div>
                                     <div className='email'>
 
@@ -63,10 +64,17 @@ const Events = () => {
                                     </div>
 
                                 </div>
+                                <div className='submit-btn'>
+                                    <div>
+                                        <img src={SendIcon} />
+                                    </div>
+                                    <div className='send-text'> Send form</div>
+                                </div>
 
                         </div>
 
                     </div>
+                <Footer />
                 </div>
             </div>
         </div>
