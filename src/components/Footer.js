@@ -15,8 +15,6 @@ const Footer = (props) => {
         window.scrollTo({
           top: 0, 
           behavior: 'smooth'
-          /* you can also use 'auto' behaviour
-             in place of 'smooth' */
         });
       };
       
@@ -25,6 +23,8 @@ const Footer = (props) => {
     
     return (
         <>
+        <div className='footer-box'>
+
         <div className='Footer-body'>
             <div className='Footer-text-1' >
                 290 Bremner Blvd, Toronto, ON M5V 3L9
@@ -41,6 +41,7 @@ const Footer = (props) => {
         </div>
         <div onClick={scrollToTop}  className='back-btn'>
         Back to top
+</div>
 </div>
         </>
     );
