@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SendIcon from '../assets/send.png'
 import Footer from '../components/Footer';
 import '../App.css'
 const Events = () => {
+    const [Fname, setFname] = useState("")
+    const [Lname, setLname] = useState("")
+    const [Email, setEmail] = useState("")
+    const [Message, setMessage] = useState("")
+    console.log(Message)
     return (
         <div className='Row'>
             <div className='Col1'></div>
@@ -25,59 +30,59 @@ const Events = () => {
                         </div>
 
                     </div>
-                        <div className='input-box'>
-                            <div className='e-l-email-box'>
+                    <div className='input-box'>
+                        <div className='e-l-email-box'>
 
-                                <div className='f-l-box'>
-                                    <div className='f-box'>
-                                        <div className='form-title'>First Name</div>
-                                        <div className=''>
+                            <div className='f-l-box'>
+                                <div className='f-box'>
+                                    <div className='form-title'>First Name</div>
+                                    <div className=''>
 
-                                            <input className='form-input' type="text" id="fname" name="firstname" placeholder="" />
-                                        </div>
-
+                                        <input value={Fname} onChange={(e) => setFname(e.target.value)} className='form-input' type="text" id="fname" name="firstname" placeholder="" />
                                     </div>
-                                    <div className='f-box'>
-                                        <div className='form-title'>Last Name</div>
-                                        <div className=''>
 
-                                            <input className='form-input' type="text" id="lname" name="firstname" placeholder="" />
-                                        </div>
-
-                                    </div>
                                 </div>
-                                <div className='email'>
-                                    <div className='form-title'>Email</div>
-                                    <div className='email'>
+                                <div className='f-box'>
+                                    <div className='form-title'>Last Name</div>
+                                    <div className=''>
 
-                                        <input className='form-input' type="email" id="email" name="firstname" placeholder="" />
+                                        <input value={Lname} onChange={(e) => setLname(e.target.value)} className='form-input' type="text" id="lname" name="firstname" placeholder="" />
                                     </div>
 
                                 </div>
                             </div>
-                            <div className=''>
-                                    <div className='e-l-email-box'>
-                                        <div className='message'>
+                            <div className='email'>
+                                <div className='form-title'>Email</div>
+                                <div className='email'>
+
+                                    <input value={Email} onChange={(e) => setEmail(e.target.value)} className='form-input' type="email" id="email" name="firstname" placeholder="" />
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className=''>
+                            <div className='e-l-email-box'>
+                                <div className='message'>
 
                                     <div className='form-title'>Message </div>
 
 
-                                    <textarea className='form-input' defaultValue="" id="message" name="message" rows="6" cols="50">
-                            </textarea>
-                                        </div>
-                                  
-                                    </div>
+                                    <textarea value={Message} onChange={(e) => setMessage(e.target.value)} className='form-input'  id="message" name="message" rows="6" cols="50">
+                                    </textarea>
+                                </div>
 
-                                </div>
-                                <div className='submit-btn'>
-                                    <div>
-                                        <img src={SendIcon} />
-                                    </div>
-                                    <div className='send-text'> Send form</div>
-                                </div>
+                            </div>
 
                         </div>
-                <Footer />
+                        <div className='submit-btn'>
+                            <div>
+                                <img src={SendIcon} />
+                            </div>
+                            <div className='send-text'> Send form</div>
+                        </div>
+
+                    </div>
+                    <Footer />
                 </div>
             </div>
         </div>

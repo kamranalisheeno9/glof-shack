@@ -8,7 +8,7 @@ const Rates = () => {
             <div className='Col1'></div>
             <div className='Col2'>
 
-                <div className=''>
+                <div className='tutorial-box'>
                     <div className='page-bg rates-bg'>
                         <div className='page-title '>
                             Tutorials
@@ -128,9 +128,9 @@ const Rates = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
                         <LetsPlay />
                         <Footer />
-                    </div>
 
                 </div>
             </div>
