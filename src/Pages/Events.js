@@ -23,6 +23,8 @@ const Events = () => {
                         <div className='inner-paragraph'>
                             Hosting an event? Let us know about any questions, comments or concerns you have about our event services.
                         </div>
+
+                    </div>
                         <div className='input-box'>
                             <div className='e-l-email-box'>
 
@@ -54,12 +56,15 @@ const Events = () => {
                                 </div>
                             </div>
                             <div className=''>
+                                    <div className='e-l-email-box'>
+                                        <div className='message'>
+
                                     <div className='form-title'>Message </div>
-                                    <div className='message'>
 
 
                                     <textarea className='form-input' defaultValue="" id="message" name="message" rows="6" cols="50">
                             </textarea>
+                                        </div>
                                   
                                     </div>
 
@@ -72,8 +77,6 @@ const Events = () => {
                                 </div>
 
                         </div>
-
-                    </div>
                 <Footer />
                 </div>
             </div>
