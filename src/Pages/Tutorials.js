@@ -13,18 +13,25 @@ const TutorialsData = [
   {
     videoImg: BookingV,
     hTitle: "Booking",
+    address:"https://www.youtube.com/embed/pSZRiS3NawM"
+
   },
   {
     videoImg: RoomV,
     hTitle: "Entering the facility",
+    address:"https://www.youtube.com/embed/pSZRiS3NawM"
+
   },
   {
     videoImg: GameV,
     hTitle: "Starting the game",
+    address:"https://www.youtube.com/embed/pSZRiS3NawM"
+
   },
   {
     videoImg: PlayerV,
     hTitle: "Game rules",
+    address:"https://www.youtube.com/embed/pSZRiS3NawM"
   },
 
 ]
@@ -47,7 +54,7 @@ const Tutorials = () => {
               <div key={key}>
                 <div className='square-box'></div>
                 <div className='inner-page-title' >{data.hTitle}</div>
-                <Video videoImg={data.videoImg} address="https://vimeo.com/175758449" />
+                <Video videoImg={data.videoImg} address={data.address} />
               </div>
 
             )

@@ -51,7 +51,6 @@ const Slider = (props) => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-// console.log()
     return (
         <>
             <div className='res-container'>
@@ -69,7 +68,9 @@ const Slider = (props) => {
 
                     <Offcanvas show={show} onHide={handleClose}>
                         <Offcanvas.Header closeButton>
-                            <Offcanvas.Title></Offcanvas.Title>
+                            <Offcanvas.Title>
+                                <img width="200px"  src={ResLogo} />
+                            </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
 

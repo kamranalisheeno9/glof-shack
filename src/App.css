@@ -709,6 +709,11 @@ body {
   user-select: none;
   margin-left: 8px;
 }
+.submit-btn:hover{
+  background: #43464a;
+  transition: all 0.3s ;
+}
+
 
 .send-text {
 
@@ -859,7 +864,7 @@ body {
 
 
   .vid-background {
-    height: auto;
+    height: 230px;
   }
 
   .vid-img {
@@ -871,7 +876,9 @@ body {
   .sliderBody {
     display: none;
   }
-
+  .input-box {
+    margin-left: 20px;
+  }
   .res-container {
     display: block;
   }
@@ -1202,6 +1209,9 @@ body {
 
   .e-l-email-box {
     padding: 0px 20px;
+  }
+  .vid-background {
+    height: auto;
   }
 
 }

@@ -5,7 +5,7 @@ import '../App.css'
 const Video=(props)=> {
     return (
         <div className='vid-background'>
-            <div className='vid-img'>
+            {/* <div className='vid-img'>
                 <img src={props.videoImg} />
             <a href={props.address} target="_blank">
                 <div className='play-btn'>
@@ -17,7 +17,8 @@ const Video=(props)=> {
                     </div>
                 </div>
         </a>
-            </div>
+            </div> */}
+        <iframe width="560"  src={props.address}  frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
     );
 }

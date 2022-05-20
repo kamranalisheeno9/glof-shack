@@ -126,7 +126,7 @@ const Home = () => {
                             How it works
                         </div>
 
-                        <Video videoImg={VideoImg} address="https://vimeo.com/175758449" />
+                        <Video videoImg={VideoImg} address="https://www.youtube.com/embed/pSZRiS3NawM" />
                         <div className='vid-time'>
 
                             <div className='pick-time-2'>

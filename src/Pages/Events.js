@@ -1,13 +1,54 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SendIcon from '../assets/send.png'
 import Footer from '../components/Footer';
 import '../App.css'
+import { Modal, Button } from 'react-bootstrap';
 const Events = () => {
+
+
+    const [show, setShow] = useState(false);
     const [Fname, setFname] = useState("")
     const [Lname, setLname] = useState("")
     const [Email, setEmail] = useState("")
     const [Message, setMessage] = useState("")
-    console.log(Message)
+    const [Display, setDisplay] = useState("")
+    const [Querry, setQuerry] = useState([])
+
+    const handleClose = () => {
+        setShow(false)
+        setFname("")
+        setLname("")
+        setEmail("")
+        setMessage("")
+    };
+    const handleShow = () => setShow(true);
+
+    const AddQuerry = () => {
+
+        const currentQuerry = {
+            fname: Fname,
+            lname: Lname,
+            email: Email,
+            message: Message,
+
+        }
+        {
+            Fname == "" || Lname == "" || Email == "" || Message == "" ?
+                handleShow()
+                :
+                setQuerry([...Querry, currentQuerry])
+            handleShow()
+
+
+        }
+    }
+
+    useEffect(() => {
+        Fname == "" || Lname == "" || Email == "" || Message == "" ?
+            setDisplay("Fill the form !") :
+            setDisplay("Form successfully sent.")
+    });
+
     return (
         <div className='Row'>
             <div className='Col1'></div>
@@ -67,21 +108,28 @@ const Events = () => {
                                     <div className='form-title'>Message </div>
 
 
-                                    <textarea value={Message} onChange={(e) => setMessage(e.target.value)} className='form-input'  id="message" name="message" rows="6" cols="50">
+                                    <textarea value={Message} onChange={(e) => setMessage(e.target.value)} className='form-input' id="message" name="message" rows="6" cols="50">
                                     </textarea>
                                 </div>
 
                             </div>
 
                         </div>
-                        <div className='submit-btn'>
+                        <div onClick={AddQuerry} className='submit-btn'>
                             <div>
                                 <img src={SendIcon} />
                             </div>
-                            <div className='send-text'> Send form</div>
+                            <div className='send-text' > Send form</div>
                         </div>
 
                     </div>
+
+                    <Modal show={show} onHide={handleClose} backdrop="static">
+                        <Modal.Header closeButton>
+                            <Modal.Title> {Display}</Modal.Title>
+                        </Modal.Header>
+
+                    </Modal>
                     <Footer />
                 </div>
             </div>
