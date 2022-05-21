@@ -901,7 +901,7 @@ body {
     display: none;
   }
   .input-box {
-    margin-left: 20px;
+    margin-left: 0px;
   }
   .res-container {
     display: block;
@@ -979,7 +979,7 @@ body {
 
 
   .inner-div {
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
 }
@@ -1231,7 +1231,7 @@ body {
   }
 
   .e-l-email-box {
-    padding: 0px 20px;
+    padding: 0px 0px;
   }
   .vid-background {
     height: auto;
