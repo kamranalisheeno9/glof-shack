@@ -106,7 +106,7 @@ const Home = () => {
                                 showDots={false}
                                 responsive={responsive}
                                 arrows={false}
-                                ssr={true} // means to render carousel on server-side.
+                                ssr={true}
                                 infinite={true}
                                 autoPlay={true}
                                 autoPlaySpeed={4000}

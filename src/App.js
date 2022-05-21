@@ -14,9 +14,10 @@ import Slider from './components/Slider';
 
 function App() {
   return (
+    <>
     <div className="App">
-      
       <Slider />
+      
         <Routes>
       <Route path="/" element={<Home />}></Route>
       <Route path="book" element={<Book />}></Route>
@@ -26,6 +27,7 @@ function App() {
       <Route path="events" element={<Events />}></Route>
     </Routes>
     </div>
+    </>
   );
 }
 

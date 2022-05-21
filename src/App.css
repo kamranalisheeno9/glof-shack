@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 
 body {
-  background-color: #F3F4F6 !important;
+  background-color: white !important;
 }
 
 .App {
   height: 100%;
+  
 }
 
 /* ------- Slider Styling -------- */
@@ -130,6 +131,11 @@ body {
 .offcanvas.offcanvas-start {
   width: auto !important;
 }
+.res-logo-box{
+  text-align: center;
+  width: 80%;
+}
+
 
 
 /* ------------ Common ---------- */
@@ -149,16 +155,21 @@ body {
 
 .Col2 {
   width: 100%;
+  background-color: #F3F4F6;
+
 }
 
 /* -------- Home Page -------- */
 
 .mainScreen {
   position: absolute;
-  height: 637px;
+  height: auto;
   left: 310px;
   right: 0px;
   top: 4px;
+  background-color: #F3F4F6;
+  padding-left: 10px;
+
 }
 
 
@@ -178,7 +189,7 @@ body {
   width: 587px;
   height: 208px;
   left: 60px;
-  top: calc(50% - 208px/2 - 0.5px);
+  top: calc(16% - 208px/2 - 0.5px);
 }
 
 .arrow-container {
@@ -246,7 +257,7 @@ body {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 24px;
   color: #059669;
 
@@ -276,6 +287,7 @@ body {
   height: 16px;
   background: #059669;
   mix-blend-mode: normal;
+  
 }
 
 .extra-text {
@@ -402,7 +414,7 @@ body {
 
 .vid-img {
   width: 658px;
-  height: 363px;
+  height: auto;
 
   mix-blend-mode: normal;
 
@@ -521,6 +533,10 @@ body {
   position: relative;
 
 }
+.inner-div{
+  padding-left:10px ;
+
+}
 
 .tutorials-h {
 
@@ -548,15 +564,16 @@ body {
   line-height: 36px;
   color: #111827;
   margin-top: 20px;
+
 }
 
 .tutorial-box {
   position: absolute;
-  height: 637px;
   left: 310px;
   right: 0px;
   top: 4px;
-
+  padding: 0px 15px;
+  background-color: #F3F4F6;
 }
 
 /* ---------- Lets Play ------- */
@@ -626,6 +643,8 @@ body {
 
 .input-box {
   margin-top: 20px;
+  padding-left:10px ;
+
 }
 
 .f-l-box {
@@ -822,7 +841,7 @@ body {
   /* -------- Home Page -------- */
 
   .mainText {
-    top: calc(35% - 208px/2 - 0.5px);
+    top: calc(14% - 208px/2 - 0.5px);
 
   }
 }
@@ -831,18 +850,22 @@ body {
   .message textarea {
     width: 600px;
 }
+
 }
 @media only screen and (max-width:1100px) {
 
   /* -------- Home Page -------- */
+  .mainText {
+    top: calc(14% - 208px/2 - 0.5px);
 
+  }
   .mainScreen img {
     width: 100%;
     margin: 0 auto;
   }
 
   .mainText {
-    top: calc(25% - 208px/2 - 0.5px);
+    top: calc(12% - 208px/2 - 0.5px);
     gap: 15px;
     width: fit-content;
     margin: 0px;
@@ -873,6 +896,7 @@ body {
 }
 
 @media only screen and (max-width:992px) {
+  
   .sliderBody {
     display: none;
   }
@@ -894,11 +918,13 @@ body {
     left: 0px;
     right: 0px;
     top: 0px;
+    padding: 0px;
 
   }
 
   .inner-page-title {
     line-height: 16px;
+    margin-left: 5px;
   }
 
   .Col2 {
@@ -914,6 +940,7 @@ body {
   .square-box {
     margin-top: 50px;
     margin-left: 20px;
+
   }
 
   .extra-text {
@@ -927,7 +954,7 @@ body {
   }
 
   .mainText {
-    top: calc(38% - 208px/2 - 0.5px);
+    top: calc(14% - 208px/2 - 0.5px);
     margin: 20px;
   }
 
@@ -950,10 +977,6 @@ body {
     cursor: pointer;
   }
 
-  .inner-page-title {
-    margin-left: 20px;
-
-  }
 
   .inner-div {
     margin-left: 20px;
@@ -963,7 +986,7 @@ body {
 
 @media only screen and (max-width:900px) {
   .mainText {
-    top: calc(30% - 208px/2 - 0.5px);
+    top: calc(12% - 208px/2 - 0.5px);
     margin: 20px;
   }
 
@@ -975,7 +998,7 @@ body {
 
 @media only screen and (max-width:768px) {
   .mainText {
-    top: calc(22% - 208px/2 - 0.5px);
+    top: calc(11% - 208px/2 - 0.5px);
     margin: 20px;
   }
 
@@ -1010,7 +1033,7 @@ body {
   }
 
   .mainText {
-    top: calc(35% - 208px/2 - 0.5px);
+    top: calc(12% - 208px/2 - 0.5px);
     margin: 20px;
   }
 

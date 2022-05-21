@@ -7,7 +7,8 @@ import RatesIcon from '../assets/rates.png'
 import TutorialsIcon from '../assets/tutorials.png'
 import LessonsIcon from '../assets/lessons.png'
 import EventsIcon from '../assets/events.png'
-import ResLogo from '../assets/logo2.png'
+import ResLogo from '../assets/logo.png'
+import ResLogo2 from '../assets/logo2.png'
 import { Button, Offcanvas } from 'react-bootstrap';
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -56,7 +57,7 @@ const Slider = (props) => {
             <div className='res-container'>
 
                 <div className='res-logo'>
-                    <img src={ResLogo} />
+                    <img src={ResLogo2} />
                 </div>
                 <div className='res-bar'>
                     <div className='menu-btn' onClick={handleShow}>
@@ -69,11 +70,13 @@ const Slider = (props) => {
                     <Offcanvas show={show} onHide={handleClose}>
                         <Offcanvas.Header closeButton>
                             <Offcanvas.Title>
-                                <img width="200px"  src={ResLogo} />
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
+                                <div className='res-logo-box' >
+                                <img src={ResLogo} />
 
+                                </div>
                             <ul className='sliderList'>
                                 {SiderBarData.map((data, key) => {
                                     return (

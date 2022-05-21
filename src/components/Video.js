@@ -18,7 +18,7 @@ const Video=(props)=> {
                 </div>
         </a>
             </div> */}
-        <iframe width="560"  src={props.address}  frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <iframe width="100%"   src={props.address}  frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
     );
 }
