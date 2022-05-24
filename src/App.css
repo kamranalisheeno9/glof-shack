@@ -246,6 +246,10 @@ body {
   user-select: none;
 }
 
+.pick-time:active{
+  background: #ebebeb;
+
+}
 .book-icon {
   width: 24px;
   height: 24px;
@@ -345,6 +349,11 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #059669;
+  user-select: none;
+}
+.pick-time-2:active .pick-text-2 {
+  color: #025f41;
+
 }
 
 .vector-icon {
@@ -621,8 +630,14 @@ body {
   height: 48px;
   background: #FFFFFF;
   border-radius: 44px;
+  user-select: none;
+  cursor: pointer;
+}
+.lets-play-btn:active{
+  background: #ebebeb;
 
 }
+
 
 .inner-paragraph {
   height: 24px;

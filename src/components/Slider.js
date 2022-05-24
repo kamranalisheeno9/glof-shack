@@ -11,7 +11,6 @@ import ResLogo from '../assets/logo.png'
 import ResLogo2 from '../assets/logo2.png'
 import { Button, Offcanvas } from 'react-bootstrap';
 import MenuIcon from '@mui/icons-material/Menu';
-
 const SiderBarData = [
     {
         title: "Home",
@@ -57,7 +56,9 @@ const Slider = (props) => {
             <div className='res-container'>
 
                 <div className='res-logo'>
+                    <Link to="/" onClick={()=>setActive(0)}>
                     <img src={ResLogo2} />
+                    </Link>
                 </div>
                 <div className='res-bar'>
                     <div className='menu-btn' onClick={handleShow}>
@@ -74,8 +75,10 @@ const Slider = (props) => {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                                 <div className='res-logo-box' >
-                                <img src={ResLogo} />
+                    <Link to="/" onClick={()=>setShow(false) || setActive(0)} >
 
+                                <img src={ResLogo} />
+                </Link>
                                 </div>
                             <ul className='sliderList'>
                                 {SiderBarData.map((data, key) => {
@@ -83,7 +86,10 @@ const Slider = (props) => {
                                         <Link  onClick={e => setActive(key) || setShow(false) } key={key} to={data.address} >
                                             <li   className={key == active ? "active" : ""}>
                                                 <div className='icon'>
-                                                    <img src={data.icon} /></div>
+
+                                                    <img src={data.icon} />
+                                                 
+                                                    </div>
                                                 <div className='title'>
                                                     {data.title}</div>
                                             </li>
@@ -101,7 +107,10 @@ const Slider = (props) => {
             </div>
 
             <div className='sliderBody'>
-                <div className='mainLogo'></div>
+            <Link to="/" onClick={()=>setActive(0)}>
+
+                <div  className='mainLogo'></div>
+</Link>
                 <ul className='sliderList'>
                     {SiderBarData.map((data, key) => {
                         return (
